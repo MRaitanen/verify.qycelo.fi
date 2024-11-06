@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{ username }}!</h1>
+        <p>
+            You has been successfully verified on Discord.
+        </p>
+        <p class="small-text">
+            You can close this tab and go back to the discord.
+        </p>
+        <a href="https://discord.com/channels/{{ GUILD_ID }}" class="button">Go to Discord</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Discord Verification</h1>
+        <p>
+            To verify your account, please log in with Discord.
+        </p>
+        <a href="{{ url_for('login') }}" class="button">Log in with Discord</a>
+    </div>
+</body>
+</html>
